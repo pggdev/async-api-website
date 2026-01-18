@@ -32,7 +32,7 @@ interface MobileNavMenuProps {
  * @param {MobileNavMenuProps} props - The props for the MobileNavMenu component.
  */
 export default function MobileNavMenu({
-  onClickClose = () => {},
+  onClickClose = () => { },
   uniqueLangs,
   currentLanguage,
   changeLanguage
@@ -55,7 +55,7 @@ export default function MobileNavMenu({
   const { langMap } = i18nextConfig;
 
   return (
-    <div className='fixed inset-x-0 top-0 z-60 max-h-full origin-top-right overflow-y-auto py-2 transition lg:hidden'>
+    <div className='fixed inset-x-0 top-0 z-60 max-h-full origin-top-right overflow-y-auto py-2 transition xl:hidden'>
       <div className='rounded-lg shadow-lg'>
         <div className='shadow-xs divide-y-2 divide-gray-50 rounded-lg bg-white'>
           <div className='space-y-6 px-4 pb-6 pt-4'>

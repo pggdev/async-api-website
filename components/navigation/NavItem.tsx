@@ -28,8 +28,8 @@ export default function NavItem({
   text,
   href,
   target = '_self',
-  onClick = () => {},
-  onMouseEnter = () => {},
+  onClick = () => { },
+  onMouseEnter = () => { },
   hasDropdown = false,
   className = ''
 }: NavItemProps) {
@@ -41,9 +41,8 @@ export default function NavItem({
         href={href}
         target={target}
         rel='noopener noreferrer'
-        className={`${className} font-body text-base font-semibold leading-6 text-gray-700 transition duration-150 ease-in-out hover:text-gray-900 focus:text-gray-900 focus:outline-none ${
-          router.pathname.startsWith(href) ? 'text-black' : 'text-gray-700'
-        }`}
+        className={`${className} font-body text-base font-semibold leading-6 text-gray-700 transition duration-150 ease-in-out hover:text-gray-900 focus:text-gray-900 focus:outline-none ${router.pathname.startsWith(href) ? 'text-black' : 'text-gray-700'
+          }`}
       >
         {text}
       </Link>

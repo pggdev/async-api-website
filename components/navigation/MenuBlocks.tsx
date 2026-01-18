@@ -42,14 +42,12 @@ export default function MenuBlocks({ items = [] }: MenuBlocksProps) {
           >
             <span
               data-testid='MenuBlocks-Link'
-              className={`-mx-3 mt-1 flex items-start space-x-4 rounded-lg p-3 transition duration-150 ease-in-out ${
-                router.asPath === item.href ? 'bg-secondary-100 shadow-sm' : 'hover:bg-gray-50'
-              }`}
+              className={`-mx-3 mt-1 flex items-start space-x-4 rounded-lg p-3 transition duration-150 ease-in-out ${router.asPath === item.href ? 'bg-secondary-100 shadow-sm' : 'hover:bg-gray-50'
+                }`}
             >
               <div
-                className={`flex size-10 shrink-0 items-center justify-center rounded-lg ${
-                  item.className ? item.className : 'border border-gray-800 bg-secondary-100'
-                } text-gray-900 sm:size-12 ${item.comingSoon && 'opacity-50'}`}
+                className={`flex size-10 shrink-0 items-center justify-center rounded-lg ${item.className ? item.className : 'border border-gray-800 bg-secondary-100'
+                  } text-gray-900 sm:size-12 ${item.comingSoon && 'opacity-50'}`}
                 data-testid='MenuBlock-icon'
               >
                 <item.icon className='size-6' />
